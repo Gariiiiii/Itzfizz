@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -189,13 +189,19 @@ export default function Home() {
             </div>
 
             {/* Car */}
-            <Image
+            {/* <Image
               ref={carRef}
               src="/car.png"
               alt="car"
               width={300}
               height={200}
               priority
+              className="absolute left-0 top-1/2 z-20 h-50 w-auto -translate-y-1/2 object-contain will-change-transform"
+            /> */}
+            <img
+              ref={carRef}
+              src="/Itzfizz/car.png"
+              alt="car"
               className="absolute left-0 top-1/2 z-20 h-50 w-auto -translate-y-1/2 object-contain will-change-transform"
             />
           </div>
