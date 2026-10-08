@@ -191,7 +191,7 @@ export default function Home() {
             {/* Car */}
             <Image
               ref={carRef}
-              src="/car.png"
+              src="/assets/car.png"
               alt="car"
               width={300}
               height={200}
