@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: "export",
+
+  basePath: "/Itzfizz",
+
+  images: {
+    unoptimized: true,
+  },
+
+  trailingSlash: true,
+
   turbopack: {
     rules: {
       "*.css": {
